@@ -12,7 +12,7 @@
 definition(
         name: "Shabbat and Holiday Modes",
         namespace: "ShabbatHolidayMode",
-        author: "@dannyzen",
+        author: "Josh Rosenberg",
         description: "Changes the mode at candle lighting and back after havdalah. Also allows for optoinal virtual device to turn on and off. Uses the HebCal.com API to look for days that are shabbat or chag and pull real time candle lighting and havdalah times to change modes automatically",
         category: "My Apps",
         iconUrl: "http://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Star_of_David.svg/200px-Star_of_David.svg.png",
@@ -146,7 +146,7 @@ def HebCal_GetTime24(hebcal_date) {
     // log.trace "${returnTime}"
     returnTime = returnTime.split("-")[0]
     return returnTime
-}//END def HebCal_GetTime12()
+}//END def HebCal_GetTime24()
 
 /*-----------------------------------------------
  END OF HEBCAL FUNCTIONS
